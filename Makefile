@@ -1,3 +1,4 @@
-src/shell.c    ---compile-->   shell.o
-src/execute.c  ---compile-->   execute.o
-shell.o + execute.o  ---link-->   shell (final program)
+gcc -c src/shell.c    → shell.o
+gcc -c src/execute.c  → execute.o
+gcc shell.o execute.o → shell
+
